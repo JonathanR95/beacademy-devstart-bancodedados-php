@@ -8,8 +8,10 @@ abstract class AbstractController
 {
     public function render(string $viewName, $data =null):void
     {
-
+        include dirname(__DIR__).'/View/_partials/head.php';
 
         include dirname(__DIR__)."/View/{$viewName}.php";
+
+        include dirname(__DIR__).'/View/_partials/footer.php'; 
     }
 }
