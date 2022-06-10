@@ -10,7 +10,7 @@
         <tr>
             <th>#ID</th>
             <th>Nome</th>
-            <th>Descrição</th>
+            <th style="max-width:300px;">Descrição</th>
             <th>Imagem</th>
             <th>Preço</th>
             <th>Quantidade</th>
@@ -27,12 +27,13 @@
                     <tr>
                         <td>{$id}</td>
                         <td>{$name}</td>
-                        <td>{$description}</td>
+                        <td style='max-width:300px;'>{$description}</td>
                         <td><img width='100px'src='{$photo}'></td>
                         <td>R$ {$value}</td>
                         <td>{$quantity}</td>
                         <td>{$created_at}</td>
                         <td>
+                            <a href='/produtos/editar?id={$id}' class='btn btn-outline-warning btn-sm'>Editar</a>
                             <a href='/produtos/excluir?id={$id}' class='btn btn-outline-danger btn-sm'>Excluir</a>
                         </td>
                     </tr>

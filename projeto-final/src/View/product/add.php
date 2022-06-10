@@ -7,11 +7,11 @@
         <?PHP
             while($category = $data->fetch(\PDO::FETCH_ASSOC)){
                 extract($category);
-
+//
                 echo "<option value='{$id}'>{$name}</option>";
             }
         
-        ?>
+        ?> 
     </select>
 
     <label for="name">Nome</label>
