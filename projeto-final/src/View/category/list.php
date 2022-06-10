@@ -2,6 +2,11 @@
 
 <H1>Listar Categorias</H1>
 
+<div class="mb-3 text-end">
+    <a href="/categorias/nova" class="btn btn-outline-primary">Nova categoria</a>
+</div>
+
+
 <table class="table table-hover table-striped">
     <thead class="table-dark">
         <tr>
