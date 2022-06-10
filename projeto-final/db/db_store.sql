@@ -14,8 +14,8 @@ CREATE TABLE tb_product(
     name VARCHAR(30) NOT NULL,
     description VARCHAR(100) NOT NUll,
     photo VARCHAR(255) NOT NULL,
-    valor FLOAT(5,2) NOT NULL,
-    categoria_id INT(11) NOT NULL ,
+    value FLOAT(5,2) NOT NULL,
+    category_id INT(11) NOT NULL ,
     quantity INT(5) NOT NULL,
     created_at DATETIME NOT NULL    
 );
@@ -31,10 +31,10 @@ VALUES
 ('Eletronicos', 'TVs, Caixas de Som, Celulares, fones d e ouvido, etc');
 
 --exercicio: criar 20 produtos para a tabela tb_product
-INSERT INTO tb_product(name, description, photo, valor,categoria_id,quantity,created_at)
+INSERT INTO tb_product(name, description, photo, value,category_id,quantity,created_at)
 VALUES 
-('Monitor de LED', 'Monitor PCTop MLP170HDMI led 17 " preto 100V/240V', 'https://http2.mlstatic.com/D_NQ_NP_734440-MLA47873401457_102021-O.webp', 500, 1, 30,09/06/2022),
-('Celular', 'Smartphone Motorola E7 Power 32gb Camera Dupla Azul Metalico','https://http2.mlstatic.com/D_NQ_NP_845499-MLB45883289205_052021-O.webp', 839, 2, 15 ,09/06/2022),
-('Joystick', 'Controle joystick sem fio Microsoft Xbox Wireless Controller Series X|S robot white','https://http2.mlstatic.com/D_NQ_NP_889337-MLA44330907885_122020-O.webp', 499.9 , 3, 25,09/06/2022),
-('Computador', 'Computador Completo Fácil Intel Core I3 8gb Ssd 240gb','https://http2.mlstatic.com/D_NQ_NP_704139-MLB47542929423_092021-O.webp', 1745 , 4, 3,09/06/2022),
-('Tablet', 'Tablet Samsung Galaxy A7 Lite SM-T225 8.7" 32GB cinza e 3GB de memória RAM','https://http2.mlstatic.com/D_NQ_NP_921653-MLA47848605434_102021-O.webp', 934 , 5, 10,09/06/2022);
+('Monitor de LED', 'Monitor PCTop MLP170HDMI led 17 " preto 100V/240V', 'https://http2.mlstatic.com/D_NQ_NP_734440-MLA47873401457_102021-O.webp', 500.10 , 1, 30,'2022-06-10 09:30:35'),
+('Celular', 'Smartphone Motorola E7 Power 32gb Camera Dupla Azul Metalico','https://http2.mlstatic.com/D_NQ_NP_845499-MLB45883289205_052021-O.webp', 839.99, 2, 15 ,'2022-06-10 09:30:35'),
+('Joystick', 'Controle joystick sem fio Microsoft Xbox Wireless Controller Series X|S robot white','https://http2.mlstatic.com/D_NQ_NP_889337-MLA44330907885_122020-O.webp', 499.9 , 3, 5, '2022-06-10 09:30:35'),
+('Computador', 'Computador Completo Fácil Intel Core I3 8gb Ssd 240gb','https://http2.mlstatic.com/D_NQ_NP_704139-MLB47542929423_092021-O.webp', 945.30 , 4, 7,'2022-06-10 09:30:35'),
+('Tablet', 'Tablet Samsung Galaxy A7 Lite SM-T225 8.7" 32GB cinza e 3GB de memória RAM','https://http2.mlstatic.com/D_NQ_NP_921653-MLA47848605434_102021-O.webp', 934.50 , 5, 10,'2022-06-10 09:30:35');
